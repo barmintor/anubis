@@ -1,13 +1,13 @@
 :root {
-  --body-sans-font: Geist, sans-serif;
-  --body-preformatted-font: Iosevka Curly Iaso, monospace;
-  --body-title-font: Podkova, serif;
+  --body-sans-font: Arial, sans-serif;
+  --body-preformatted-font: "Courier New", monospace;
+  --body-title-font: TrajanProRegular, trajan, serif;
 
-  --background: #1d2021;
-  --text: #f9f5d7;
-  --text-selection: #d3869b;
+  --background: #093552;
+  --text: #f9f9f9;
+  --text-selection: #303030;
   --preformatted-background: #3c3836;
-  --link-foreground: #b16286;
+  --link-foreground: #d3d3d3;
   --link-background: #282828;
   --blockquote-border-left: 1px solid #bdae93;
 
@@ -16,37 +16,22 @@
 }
 @media (prefers-color-scheme: light) {
   :root {
-    --background: #f9f5d7;
-    --text: #1d2021;
-    --text-selection: #d3869b;
-    --preformatted-background: #ebdbb2;
-    --link-foreground: #b16286;
-    --link-background: #fbf1c7;
+    --background: #f9f9f9;
+    --text: #1d4f91;
+    --text-selection: #d3d3d3;
+    --preformatted-background: #e2e2e2;
+    --link-foreground: #769ac5;
+    --link-background: #f9f9f9;
     --blockquote-border-left: 1px solid #655c54;
   }
 }
 
 @font-face {
-  font-family: "Geist";
+  font-family: "TrajanProRegular";
   font-style: normal;
   font-weight: 100 900;
   font-display: swap;
-  src: url("./static/geist.woff2") format("woff2");
-}
-
-@font-face {
-  font-family: "Podkova";
-  font-style: normal;
-  font-weight: 400 800;
-  font-display: swap;
-  src: url("./static/podkova.woff2") format("woff2");
-}
-
-@font-face {
-  font-family: "Iosevka Curly";
-  font-style: monospace;
-  font-display: swap;
-  src: url("./static/iosevka-curly.woff2") format("woff2");
+  src: url("https://cdn.cul.columbia.edu/ldpd-toolkit/fonts/trajanpro-regular-webfont.woff") format("woff2");
 }
 
 main {
