@@ -3,26 +3,26 @@
   --body-preformatted-font: "Courier New", monospace;
   --body-title-font: TrajanProRegular, trajan, serif;
 
-  --background: #093552;
-  --text: #f9f9f9;
-  --text-selection: #303030;
-  --preformatted-background: #3c3836;
-  --link-foreground: #d3d3d3;
-  --link-background: #282828;
-  --blockquote-border-left: 1px solid #bdae93;
+  --background: #1d497d;
+  --text: #fff;
+  --text-selection: #99c2ff;
+  --preformatted-background: #1d497d;
+  --link-foreground: #fff;
+  --link-background: initial;
+  --blockquote-border-left: 1px solid #aabacd;
 
-  --progress-bar-outline: #b16286 solid 4px;
-  --progress-bar-fill: #b16286;
+  --progress-bar-outline: #99c2ff solid 4px;
+  --progress-bar-fill: #99c2ff;
 }
 @media (prefers-color-scheme: light) {
   :root {
-    --background: #f9f9f9;
-    --text: #1d4f91;
-    --text-selection: #d3d3d3;
-    --preformatted-background: #e2e2e2;
-    --link-foreground: #769ac5;
-    --link-background: #f9f9f9;
-    --blockquote-border-left: 1px solid #655c54;
+    --background: #fff;
+    --text: #212529;
+    --text-selection: #99c2ff;
+    --preformatted-background: #fff;
+    --link-foreground: #2c6bac;
+    --link-background: initial;
+    --blockquote-border-left: 1px solid #ddd;
   }
 }
 
@@ -83,12 +83,14 @@ html {
   border-radius: 1rem;
   overflow: hidden;
   margin: 1rem 0 2rem;
+  outline-color: var(--progress-bar-outline) !important;
   outline-offset: 2px;
-  outline: var(--progress-bar-outline);
+  outline-style: solid;
+  outline-width: 4px;
 }
 
 .bar-inner {
-  background-color: var(--progress-bar-fill);
+  background-color: var(--progress-bar-fill) !important;
   height: 100%;
   width: 0;
   transition: width 0.25s ease-in;
